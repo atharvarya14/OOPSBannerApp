@@ -1,5 +1,4 @@
 public class OOPSBannerApp {
-
     static class CharacterPatternMap {
 
         private char character;
@@ -102,5 +101,23 @@ public class OOPSBannerApp {
         String message = "OOPS";
 
         printMessage(message, charMaps);
+    }
+    public static void main(String[] args) {
+
+        String[] banner = {
+
+            String.join("   ", " ***** ", " ***** ", " ****** ", " ***** "),
+            String.join("   ", "*     *", "*     *", "*      *", "*     "),
+            String.join("   ", "*     *", "*     *", "*      *", "*     "),
+            String.join("   ", "*     *", "*     *", " ****** ", " ***** "),
+            String.join("   ", "*     *", "*     *", "*       ", "     * "),
+            String.join("   ", "*     *", "*     *", "*       ", "*    * "),
+            String.join("   ", " ***** ", " ***** ", "*       ", " ****  ")
+
+        };
+
+        for (String line : banner) {
+            System.out.println(line);
+        }
     }
 }
